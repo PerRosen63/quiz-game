@@ -35,6 +35,7 @@ jobs:
           fetch-depth: 0
       
       - run: npm install -g pnpm
+      - run: pnpm store prune
       
       - name: Use pnpm
         uses: pnpm/action-setup@v2.3.0
